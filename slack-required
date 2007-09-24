@@ -1,0 +1,21 @@
+52dec >= 0.7.4
+cxxlibs >= 6.0.8
+faac >= 1.25
+faad2 >= 2.5
+ffmpeg
+glib >= 1.2.10
+glibc-solibs >= 2.5
+lame >= 3.97
+libX11 >= 1.1.1
+libXau >= 1.0.3
+libdc1394 >= 1.2.2
+libdv >= 1.0.0
+libjpeg >= 6b
+libogg >= 1.1.3
+libpng >= 1.2.18
+libraw1394 >= 1.2.1
+libtheora >= 1.0alpha7
+libvorbis >= 1.1.2
+libxcb >= 1.0
+x264
+zlib >= 1.2.3

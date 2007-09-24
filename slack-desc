@@ -1,0 +1,11 @@
+libquicktime: libquicktime (A library for reading and writing quicktime files)
+libquicktime:
+libquicktime: libquicktime is a library for reading and writing quicktime/avi/mp4
+libquicktime: files. It provides convenient access to quicktime files with a
+libquicktime: variety of supported codecs.
+libquicktime:
+libquicktime:
+libquicktime:
+libquicktime:
+libquicktime: Packaged by Georgi D. Sotirov <gdsotirov@dir.bg>
+libquicktime:
