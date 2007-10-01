@@ -1,4 +1,5 @@
-52dec >= 0.7.4
+a52dec >= 0.7.4
+alsa-lib >= 1.0.14a
 cxxlibs >= 6.0.8
 faac >= 1.25
 faad2 >= 2.5
@@ -6,8 +7,6 @@ ffmpeg
 glib >= 1.2.10
 glibc-solibs >= 2.5
 lame >= 3.97
-libX11 >= 1.1.1
-libXau >= 1.0.3
 libdc1394 >= 1.2.2
 libdv >= 1.0.0
 libjpeg >= 6b
