@@ -8,7 +8,7 @@
 
 NAME=libquicktime
 VERSION=1.0.0
-BUILD=1
+BUILD=2
 
 cd $TMP
 tar -zxvf $CWD/$NAME-$VERSION.tar.gz
