@@ -7,7 +7,7 @@
 . ../slack-package.conf
 
 NAME=libquicktime
-VERSION=1.0.0
+VERSION=1.1.0
 BUILD=2
 
 cd $TMP
@@ -25,14 +25,14 @@ CXXFLAGS=$SLKCFLAGS \
             --enable-shared=yes \
             --enable-static=no \
             --enable-gpl \
-            --with-cpuflags="$SLKCFLAGS"
+            --with-cpuflags="$SLKCFLAGS" || exit 1
 
-make || exit 1
+make -j4 || exit 1
 
 PKG="$TMP/package-$NAME"
 mkdir -p $PKG
 
-make -e DESTDIR=$PKG install
+make -e DESTDIR=$PKG install || exit 3
 
 bin_perms $PKG
 ( cd $PKG; strip_bin; strip_lib )
