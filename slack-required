@@ -1,20 +1,19 @@
 a52dec >= 0.7.4
-alsa-lib >= 1.0.15
-cxxlibs >= 6.0.9
-faac >= 1.26
-faad2 >= 2.6.1
+alsa-lib >= 1.0.18
+cxxlibs >= 6.0.10
+faac >= 1.28
+faad2 >= 2.7
 ffmpeg
 glib >= 1.2.10
-glibc-solibs >= 2.7
+glibc-solibs >= 2.9
 lame >= 3.98.2
-libdc1394 >= 1.2.2
-libdv >= 1.0
+libdc1394 >= 2.1.2
+libdv >= 1.0.0
 libjpeg >= 6b
 libogg >= 1.1.3
-libpng >= 1.2.27
-libraw1394 >= 1.3.0
+libpng >= 1.2.37
+libraw1394 >= 2.0.2
 libtheora >= 1.0
-libvorbis >= 1.2
-libxcb >= 1.0
-x264
+libvorbis >= 1.2.0
+libxcb >= 1.3
 zlib >= 1.2.3
