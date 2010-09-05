@@ -1,19 +1,25 @@
-a52dec >= 0.7.4
-alsa-lib >= 1.0.18
-cxxlibs >= 6.0.10
+alsa-lib >= 1.0.23
+cxxlibs >= 6.0.13 | gcc-g++ >= 4.4.4
+dirac >= 1.0.2
 faac >= 1.28
 faad2 >= 2.7
-ffmpeg
-glib >= 1.2.10
-glibc-solibs >= 2.9
-lame >= 3.98.2
+ffmpeg >= 0.6
+gcc >= 4.4.4
+glibc-solibs >= 2.11.1
+lame >= 3.98.4
 libdc1394 >= 2.1.2
 libdv >= 1.0.0
-libjpeg >= 6b
-libogg >= 1.1.3
-libpng >= 1.2.37
-libraw1394 >= 2.0.2
-libtheora >= 1.0
-libvorbis >= 1.2.0
-libxcb >= 1.3
+libjpeg >= v8a
+libogg >= 1.1.4
+libpng >= 1.4.2
+libraw1394 >= 2.0.5
+libtheora >= 1.1.1
+libvorbis >= 1.2.3
+libxcb >= 1.6
+opencore-amr >= 0.1.2
+orc >= 0.4.8
+schroedinger >= 1.0.9
+speex >= 1.2rc1
+x264
+xvidcore >= 1.2.2
 zlib >= 1.2.3
