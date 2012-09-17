@@ -1,14 +1,29 @@
 #!/bin/sh
 #
-# SlackBuild for LibQuickTime
-# Written by Georgi D. Sotirov <gdsotirov@dir.bg>
-# Vist SlackPack at http://sotirov-bg.net/slackpack/
+# Slackware build script for LibQuickTime
+# Copyright (C) 2007,2008,2010,2012 Georgi D. Sotirov <gdsotirov@dir.bg>
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; either version 2
+# of the License, or (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+# 
+# $Id: libquicktime.SlackBuild,v 1.6 2012/09/17 20:28:10 gsotirov Exp $
 #
 
-. ../slack-package.conf
+. ../../slack-package.conf
 
 NAME=libquicktime
-VERSION=1.1.5
+VERSION=1.2.4
 ARCH=${ARCH:-i486}
 BUILD=${BUILD:-1}
 
@@ -34,7 +49,7 @@ mkdir -p $PKG
 
 # Extract and fix source
 cd $TMP
-tar -xvf $CWD/$NAME-$VERSION.tar.gz
+tar -xvf $CWD/$NAME-$VERSION.tar.?z* || exit 3
 cd $SRC
 fix_source
 
@@ -44,15 +59,16 @@ CXXFLAGS=$SLKCFLAGS \
 ./configure --build=$ARCH-slackware-linux \
             --host=$ARCH-slackware-linux \
             --prefix=/usr \
+            --libdir=/usr/lib${LIBDIRSUFFIX} \
             --mandir=/usr/man \
             --docdir=/usr/doc/$NAME-$VERSION \
             --enable-shared=yes \
             --enable-static=no \
-            --enable-gpl || exit 1
+            --enable-gpl || exit 4
 
 # Build & install
-make -j4 || exit 1
-make -e DESTDIR=$PKG install || exit 3
+make -j4 || exit 5
+make -e DESTDIR=$PKG install || exit 6
 
 # Prepare
 bin_perms $PKG
