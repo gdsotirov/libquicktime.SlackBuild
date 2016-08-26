@@ -7,12 +7,12 @@ ffmpeg
 glib >= 1.2.10
 glibc-solibs >= 2.9
 lame >= 3.98.2
-libdc1394 >= 2.1.2
+libdc1394 >= 1.2.2
 libdv >= 1.0.0
 libjpeg >= 6b
 libogg >= 1.1.3
 libpng >= 1.2.37
-libraw1394 >= 2.0.2
+libraw1394 >= 1.3.0
 libtheora >= 1.0
 libvorbis >= 1.2.0
 libxcb >= 1.3
