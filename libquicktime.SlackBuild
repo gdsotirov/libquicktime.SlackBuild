@@ -17,7 +17,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 # 
-# $Id: libquicktime.SlackBuild,v 1.6 2012/09/17 20:28:10 gsotirov Exp $
+# $Id: libquicktime.SlackBuild,v 1.7 2016/09/18 07:15:21 gsotirov Exp $
 #
 
 . ../../slack-package.conf
@@ -62,9 +62,20 @@ CXXFLAGS=$SLKCFLAGS \
             --libdir=/usr/lib${LIBDIRSUFFIX} \
             --mandir=/usr/man \
             --docdir=/usr/doc/$NAME-$VERSION \
+            --enable-gpl \
             --enable-shared=yes \
             --enable-static=no \
-            --enable-gpl || exit 4
+            --with-lame \
+            --with-x \
+            --with-opengl \
+            --with-alsa \
+            --with-gtk \
+            --with-libdv \
+            --with-libjpeg \
+            --with-ffmpeg \
+            --with-libpng \
+            --with-schroedinger \
+            --with-x264 || exit 4
 
 # Build & install
 make -j4 || exit 5
